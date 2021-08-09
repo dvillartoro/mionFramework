@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # RewriteBase /
+    RewriteCond %{REQUEST_URI} !-f
+    RewriteCond %{REQUEST_URI} !-d
+    RewriteCond %{REQUEST_URI} !-l
+    RewriteCond %{REQUEST_URI} !^/dev_framework/assets/(.+)$
+
+    RewriteRule ^(.*)$ index.php?route=$1 [QSA,L]
+</IfModule>
+AddDefaultCharset utf-8

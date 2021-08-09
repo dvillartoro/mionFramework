@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "~6.1",
+        "twbs/bootstrap": "^5.0",
+        "components/jquery": "^3.5"
+    }
+}
